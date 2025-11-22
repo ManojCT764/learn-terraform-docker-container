@@ -1,0 +1,23 @@
+# When you create a new configuration — or check out an existing configuration from version control — you need to initialize the directory with terraform init.
+terraform init
+
+# The terraform fmt command automatically updates configurations in the current directory for readability and consistency.
+terraform fmt
+
+# You can also make sure your configuration is syntactically valid and internally consistent by using the terraform validate command.
+terraform validate
+
+# Inspect the current state using terraform show.
+terraform show
+
+#  Use the list subcommand to list of the resources in your project's state.
+terraform state list
+
+# overriding the default container name by passing in a variable using the -var flag. Terraform will update the container's name attribute with the new name. Respond to the confirmation prompt with yes.
+terraform apply -var "container_name=YetAnotherName"
+
+# Terraform prints output values to the screen when you apply your configuration. Query the outputs with the terraform output command.
+terraform output
+
+# Destroy your infrastructure.
+terraform destroy
